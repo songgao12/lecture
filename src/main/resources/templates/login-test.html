@@ -1,4 +1,7 @@
-{{>layout/header}}
+<!DOCTYPE html>
+<html lagn="ko" xmlns:th="http://www.thymeleaf.org">
+<th:block th:replace="layout/header :: headFragment"></th:block>
+
 <h1>Login</h1> <hr>
 
 <form action="/posts/login" method="POST">
@@ -6,4 +9,5 @@
     password : <input type="password" name="password"> <br>
     <button type="submit">Login</button>
 </form> <br>
-{{>layout/footer}}
+<th:block th:replace="layout/footer :: scriptFragment"></th:block>
+</html>

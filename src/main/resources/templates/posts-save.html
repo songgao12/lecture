@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lagn="ko" xmlns:th="http://www.thymeleaf.org">
+<th:block th:replace="layout/header :: headFragment"></th:block>
+<h1>게시글 등록</h1>
+<div class="col-md-12">
+    <div class="col-md-4">
+        <form id="testForm" name="testForm">
+            <div class="form-group">
+                <label for="title">제목</label>
+                <input type="text" class="form-control"
+                       name="title" id="title" placeholder="제목을 입력하세요">
+            </div>
+            <div class="form-group">
+                <label for="author">작성자</label>
+                <input type="text" class="form-control"
+                       name="author" id="author" placeholder="작성자를 입력하세요">
+            </div>
+            <div class="form-group">
+                <label for="content">내용</label>
+                <input type="text" class="form-control"
+                       name="content" id="content" placeholder="내용을 입력하세요">
+            </div>
+        </form>
+        <a href="/" role="button" class="btn btn-secondary">취소</a>
+        <button type="button" class="btn btn-primary" id="btn-save">등록</button>
+    </div>
+</div>
+<th:block th:replace="layout/footer :: scriptFragment"></th:block>
+</html>
